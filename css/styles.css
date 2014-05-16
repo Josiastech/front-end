@@ -779,7 +779,7 @@ h1 {
   margin-left: 0.4em;
 }
 /** Media Query for  480px	**/
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .song:nth-child(even) {
     margin-right: 1em;
   }
@@ -797,7 +797,7 @@ h1 {
   }
 }
 /** Media Query for  1000px	**/
-@media screen and (min-width:1000px) {
+@media screen and (min-width: 1000px) {
   body {
     background: #f0f0f0;
   }
@@ -924,7 +924,6 @@ h1 {
   0% {
     width: 0;
   }
-
   100% {
     width: 100%;
   }
@@ -933,7 +932,6 @@ h1 {
   0% {
     width: 0;
   }
-
   100% {
     width: 100%;
   }
@@ -942,16 +940,6 @@ h1 {
   0% {
     width: 0;
   }
-
-  100% {
-    width: 100%;
-  }
-}
-@-ms-keyframes state {
-  0% {
-    width: 0;
-  }
-
   100% {
     width: 100%;
   }
@@ -960,7 +948,6 @@ h1 {
   0% {
     width: 0;
   }
-
   100% {
     width: 100%;
   }
@@ -973,7 +960,6 @@ h1 {
     -ms-transform: scale(1);
     transform: scale(1);
   }
-
   100% {
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
@@ -993,7 +979,6 @@ h1 {
     -ms-transform: scale(1);
     transform: scale(1);
   }
-
   100% {
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
@@ -1013,27 +998,6 @@ h1 {
     -ms-transform: scale(1);
     transform: scale(1);
   }
-
-  100% {
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
-}
-@-ms-keyframes circle {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-
   100% {
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
@@ -1053,7 +1017,6 @@ h1 {
     -ms-transform: scale(1);
     transform: scale(1);
   }
-
   100% {
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
