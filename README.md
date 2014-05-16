@@ -1,3 +1,3 @@
-#Frontend Course
+#Sfotipy
 
-Demo files for the frontend course.
+Sfotipy is a web application demo.
