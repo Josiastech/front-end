@@ -9,6 +9,7 @@ dark_gray = #333333
 light_gray = #818181
 vivid_red = #BD255B
 lighter_gray = #F0F0F0
+fuscia = #cc2f6f
 
 /* General Styles */
 a
@@ -27,6 +28,71 @@ ul
 h1
 	color vivid_red
 
+/* Home */
+.banner-home
+	background-image url("../img/banner.jpg")
+	min-height 400px
+	background-size auto 290px
+	background-position right 20%
+	background-color #000
+	background-repeat no-repeat
+	overflow hidden
+.slogan
+	color #fff
+	text-align center
+	font-size 1.3em
+	font-weight normal
+#social-content
+	text-align center
+	font-size 0.8em
+	width 20em
+	margin auto
+	.social-icon
+		border-right 2px solid rgba(0,0,0,0.2)
+		font-size 1.8em
+		float left
+		margin-left 0.5em
+		padding 0.2em 9px 0.2em 0
+	.fb-login
+		width 18em
+		border-radius 5px
+		color #fff
+		padding 0.7em 0 0.5em 0
+		width 18em
+		display inline-block
+		background-color #3d5a98
+	.tw-login
+		background-color #5fa9dd
+		width 18em
+		border-radius 5px
+		color #fff
+		padding 0.7em 0 0.5em 0
+		display inline-block
+		margin-top 0.5em
+	.login-text
+		vertical-align sub
+		float left
+		margin-left 0.5em
+		margin-top 0.5em
+.create-account .create-account-btn
+	color fuscia
+.home-footer
+	background-color #333
+	min-height 20px
+	padding 0.8em 1.5em 1.5em 0.3em
+.home-footer-logo
+	color #fff
+.home-footer-menu
+	ul
+		li
+			display inline-block
+			margin-right 0.4em
+			a
+				color #fff
+				font-size 0.8em
+				text-decoration none
+				&:hover
+					text-decoration underline
 //buttons
 .button-menu
 	color dark_gray
@@ -206,7 +272,7 @@ h1
 		content ""
 			display inline-block
 			margin-left .4em
-/** Media Query for  	**/
+/** Media Query for  480px	**/
 @media screen and (min-width:480px)
 	.song
 		&:nth-child(even)
@@ -218,12 +284,69 @@ h1
 	.playing
 		&.medium
 			width auto
-/** Media Query for  	**/
+	.home-footer-menu
+		float none
+		display inline-block
+		vertical-align super
+
+/** Media Query for  1000px	**/
 @media screen and (min-width:1000px)
 	body
 		background #F0F0F0
-	.button-menu
+	body#home
+		background #fff
+		font-size 22px
+	.large
+		display block
+		// Top Header
+	.logo-nav
+		margin 1em auto 0
+		overflow hidden
+		width 1000px
+	.medium
 		display none
+	.large
+		display block
+	.banner-home
+		min-height 600px
+		.isotipo
+			margin 0 auto
+			width 227px
+			float left
+		img
+			width 100%
+			height auto
+	.login-btn
+		color fuscia
+		float right
+		text-decoration none
+		&:hover
+			text-decoration underline
+	.slogan
+		font-size 2em
+		clear left
+		margin 1.5em auto
+	// Home Page Content
+	#social-content
+		font-size 0.8em
+	.create-account
+		color #fff
+		display inline-block
+		font-size 1.2em
+		padding-top 1em
+	.home-content
+		width 1000px
+		margin 0 auto
+		padding 1em 0
+	.wrapper
+		width 1000px
+		margin 0 auto
+	.home-footer-logo
+		font-size 1.5em
+
+	// Content
+	.button-menu
+
 	.playing
 		padding-top 1.3em
 		&.large
