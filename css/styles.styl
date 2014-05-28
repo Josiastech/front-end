@@ -147,6 +147,7 @@ h1
 	float left
 .right
 	float right
+	margin-right 10px
 .wrap
 	width 1000px
 .round
@@ -217,11 +218,15 @@ h1
 		margin-right 0
 	p
 		margin .5em 0
-
+.form-control
+	display inline-block
+	margin-bottom 5px
 .playing
 	&.small
 		width 20em
 		margin 0 auto
+	.content
+		padding 1.4em 0.9em
 
 .input
 	border 1px solid light_gray
@@ -272,6 +277,37 @@ h1
 		content ""
 			display inline-block
 			margin-left .4em
+.form-content
+	width 50%
+	margin 10px 0 20px 0
+	display inline-block
+.form-group
+	width 100%
+	float left
+	margin 0
+	margin-top 10px
+	.form-control
+		width 400px
+.btn
+	display inline-block
+	margin-bottom  0
+	font-weight 400
+	text-align center
+	vertical-align middle
+	cursor pointer
+	background-image none
+	border 1px solid #adadad
+	white-space nowrap
+	padding 6px 12px
+	font-size 14px
+	line-height 1.42857143
+	border-radius 4px
+	user-select none
+	background-color white
+	&:hover
+		color #333
+		background-color #ebebeb
+		border-color #adadad
 /** Media Query for  480px	**/
 @media screen and (min-width:480px)
 	.song
@@ -307,6 +343,8 @@ h1
 		display none
 	.large
 		display block
+	.button-menu
+		display none
 	.banner-home
 		min-height 600px
 		.isotipo
