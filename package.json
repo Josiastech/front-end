@@ -1,0 +1,33 @@
+{
+  "name": "sfotipy",
+  "version": "0.1.0",
+  "description": "Sfotipy is a front-end project",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-mustache": "^0.1.7",
+    "nib": "^1.0.2",
+    "stylus": "^0.46.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "grunt-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Josiastech/sfotipy"
+  },
+  "keywords": [
+    "sfotipy",
+    "css",
+    "front-end"
+  ],
+  "author": "@j05145",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Josiastech/sfotipy/issues"
+  },
+  "homepage": "https://github.com/Josiastech/sfotipy"
+}
