@@ -1,7 +1,6 @@
 @import "nib"
 @import "normalize.styl"
 @import "fonts.styl"
-@import "normalize.styl"
 
 /* Color Palette */
 
@@ -27,7 +26,9 @@ ul
 
 h1
 	color vivid_red
-
+html, body
+	height 100%
+	
 /* Home */
 .banner-home
 	background-image url("../img/banner.jpg")
@@ -80,6 +81,7 @@ h1
 	background-color #333
 	min-height 20px
 	padding 0.8em 1.5em 1.5em 0.3em
+	height 60px
 .home-footer-logo
 	color #fff
 .home-footer-menu
@@ -102,9 +104,12 @@ h1
 	top 50%
 //oocss classes
 .container
-	padding 1.4rem
-	font-size 0
+	// padding 1.4rem
+	// font-size 0
 	text-align center
+    width auto
+    .credit
+    	padding-top 20px
 .action
 	color white
 	font-size 1.2em
@@ -423,3 +428,7 @@ h1
 	.logo
 	.playlist
 		display block
+#wrap
+	height auto !important
+	margin 0 auto -60px
+	min-height 100%
