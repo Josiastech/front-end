@@ -1,0 +1,434 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+
+/* Color Palette */
+
+dark_gray = #333333
+light_gray = #818181
+vivid_red = #BD255B
+lighter_gray = #F0F0F0
+fuscia = #cc2f6f
+
+/* General Styles */
+a
+	text-decoration none
+body
+	font-family 'Varela Round', sans-serif
+	font-size 16px
+figure
+	margin 0
+img
+	vertical-align top
+ul
+	margin 0
+	padding 0
+
+h1
+	color vivid_red
+html, body
+	height 100%
+	
+/* Home */
+.banner-home
+	background-image url("../img/banner.jpg")
+	min-height 400px
+	background-size auto 290px
+	background-position right 20%
+	background-color #000
+	background-repeat no-repeat
+	overflow hidden
+.slogan
+	color #fff
+	text-align center
+	font-size 1.3em
+	font-weight normal
+#social-content
+	text-align center
+	font-size 0.8em
+	width 20em
+	margin auto
+	.social-icon
+		border-right 2px solid rgba(0,0,0,0.2)
+		font-size 1.8em
+		float left
+		margin-left 0.5em
+		padding 0.2em 9px 0.2em 0
+	.fb-login
+		width 18em
+		border-radius 5px
+		color #fff
+		padding 0.7em 0 0.5em 0
+		width 18em
+		display inline-block
+		background-color #3d5a98
+	.tw-login
+		background-color #5fa9dd
+		width 18em
+		border-radius 5px
+		color #fff
+		padding 0.7em 0 0.5em 0
+		display inline-block
+		margin-top 0.5em
+	.login-text
+		vertical-align sub
+		float left
+		margin-left 0.5em
+		margin-top 0.5em
+.create-account .create-account-btn
+	color fuscia
+.home-footer
+	background-color #333
+	min-height 20px
+	padding 0.8em 1.5em 1.5em 0.3em
+	height 60px
+.home-footer-logo
+	color #fff
+.home-footer-menu
+	ul
+		li
+			display inline-block
+			margin-right 0.4em
+			a
+				color #fff
+				font-size 0.8em
+				text-decoration none
+				&:hover
+					text-decoration underline
+//buttons
+.button-menu
+	color dark_gray
+	left .5em
+	margin-top -10px
+	position absolute
+	top 50%
+//oocss classes
+.container
+	// padding 1.4rem
+	// font-size 0
+	text-align center
+    width auto
+    .credit
+    	padding-top 20px
+.action
+	color white
+	font-size 1.2em
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color light_gray
+	&.red
+		color red
+.actions
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	background rgba(black,.3)
+.border-bottom
+	border-bottom 1px solid light_gray
+.name
+	color dark_gray
+.menu
+	display none
+.relative
+	position relative
+.author
+	color light_gray
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
+.right-text
+	text-align right
+.relative
+	position relative
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.left
+	float left
+.right
+	float right
+	margin-right 10px
+.wrap
+	width 1000px
+.round
+	border-radius 50%
+	overflow hidden
+.progress
+	margin 1em 0
+	position relative
+	.min
+	.max
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max
+		right 0
+	.total
+		background light_gray
+		border-radius 5px
+		height 5px
+		margin 0 auto
+		width 75%
+	.state
+		animation 10s state infinite linear
+		background vivid_red
+		border-radius 5px
+		height 5px
+		position relative
+		width 30%
+
+	.circle
+		background dark_gray
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
+		animation 1s circle infinite
+
+@keyframes state
+	0%
+		width 0
+	100%
+		width 100%
+@keyframes circle
+	0%
+		transform scale(1)
+	100%
+		transform scale(2)
+		opacity 0
+.header
+	height 3.5em
+	.title
+		font-size 1.1em
+		line-height 3.5em
+		margin 0
+		text-align center
+.song
+	display inline-block
+	font-size 1rem
+	margin-bottom 1em
+	margin-right 1em
+	text-align left
+	width 8rem
+	&:nth-child(even)
+		margin-right 0
+	p
+		margin .5em 0
+.form-control
+	display inline-block
+	margin-bottom 5px
+.playing
+	&.small
+		width 20em
+		margin 0 auto
+	.content
+		padding 1.4em 0.9em
+
+.input
+	border 1px solid light_gray
+	height 2.5em
+	border-radius 5px
+	padding 0 1em 0 2em
+.search-icon
+	position absolute
+	left .5em
+	top .8em
+	color light_gray
+.close-icon
+	position absolute
+	top .5em
+	color light_gray
+	right .5em
+	font-size 1.2em
+.playlist
+	border-left 1px solid light_gray
+	padding 0 2em
+	width 22em
+	display none
+	.list
+		list-style none
+	.item
+		padding 1em 0
+	.action
+		font-size .8em
+.isotipo
+	width 122px
+.logo
+	background white
+	padding 1.3em 0
+	display none
+	clearfix()
+.avatar
+	width 38px
+	height 38px
+.username
+	color light_gray
+	position relative
+	top 9px
+	margin-left .5em
+	&:after
+		border-left 7px solid transparent
+		border-right 7px solid transparent
+		border-top 9px solid light_gray
+		content ""
+			display inline-block
+			margin-left .4em
+.form-content
+	width 50%
+	margin 10px 0 20px 0
+	display inline-block
+.form-group
+	width 100%
+	float left
+	margin 0
+	margin-top 10px
+	.form-control
+		width 400px
+.btn
+	display inline-block
+	margin-bottom  0
+	font-weight 400
+	text-align center
+	vertical-align middle
+	cursor pointer
+	background-image none
+	border 1px solid #adadad
+	white-space nowrap
+	padding 6px 12px
+	font-size 14px
+	line-height 1.42857143
+	border-radius 4px
+	user-select none
+	background-color white
+	&:hover
+		color #333
+		background-color #ebebeb
+		border-color #adadad
+/** Media Query for  480px	**/
+@media screen and (min-width:480px)
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image
+		img
+			width 100%
+			height auto
+	.playing
+		&.medium
+			width auto
+	.home-footer-menu
+		float none
+		display inline-block
+		vertical-align super
+
+/** Media Query for  1000px	**/
+@media screen and (min-width:1000px)
+	body
+		background #F0F0F0
+	body#home
+		background #fff
+		font-size 22px
+	.large
+		display block
+		// Top Header
+	.logo-nav
+		margin 1em auto 0
+		overflow hidden
+		width 1000px
+	.medium
+		display none
+	.large
+		display block
+	.button-menu
+		display none
+	.banner-home
+		min-height 600px
+		.isotipo
+			margin 0 auto
+			width 227px
+			float left
+		img
+			width 100%
+			height auto
+	.login-btn
+		color fuscia
+		float right
+		text-decoration none
+		&:hover
+			text-decoration underline
+	.slogan
+		font-size 2em
+		clear left
+		margin 1.5em auto
+	// Home Page Content
+	#social-content
+		font-size 0.8em
+	.create-account
+		color #fff
+		display inline-block
+		font-size 1.2em
+		padding-top 1em
+	.home-content
+		width 1000px
+		margin 0 auto
+		padding 1em 0
+	.wrapper
+		width 1000px
+		margin 0 auto
+	.home-footer-logo
+		font-size 1.5em
+
+	// Content
+	.button-menu
+
+	.playing
+		padding-top 1.3em
+		&.large
+			margin 0 auto
+			width 62.5em
+			overflow hidden
+	.menu
+		display block
+		background #F0F0F0
+		overflow hidden
+		border-top 1px solid light_gray
+		.item
+			float left
+			list-style none
+			a
+				color dark_gray
+				cursor pointer
+				display block
+				padding 1em
+				text-transform uppercase
+				border-top 5px solid transparent
+				transition .3s border-top
+				&:hover
+					border-top 5px solid light_gray
+	.music
+		width 32.5em
+		float left
+		.description
+			display none
+
+	.header
+		height auto
+		border none
+		.title
+			display none
+	.logo
+	.playlist
+		display block
+#wrap
+	height auto !important
+	margin 0 auto -60px
+	min-height 100%
