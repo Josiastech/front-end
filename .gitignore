@@ -1,2 +1,5 @@
-dp0u41qh.lqj.txt
-z3q0otlu.ohd.txt
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
