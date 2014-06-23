@@ -31,10 +31,10 @@ h1
 	color vivid_red
 html, body
 	height 100%
-	
+
 /* Home */
 .banner-home
-	background-image url("../img/banner.jpg")
+	background-image url("../images/banner.jpg")
 	min-height 400px
 	background-size auto 290px
 	background-position right 20%
@@ -78,6 +78,67 @@ html, body
 		float left
 		margin-left 0.5em
 		margin-top 0.5em
+.home-content
+	overflow hidden
+	text-align center
+.menu-login
+	margin-bottom 1em
+	& ul
+		padding 0.5em 0
+	& li
+		display inline-block
+		font-size 0
+		width 49%
+		text-align center
+		&:first-child
+			border-right 1px solid #676767
+		& span
+			font-size 1rem
+			color #676767
+			display inline-block
+			margin 0.25em 0
+.home-info
+	text-align center
+	padding-bottom 2em
+	& img
+		width 100%
+.home-info-title
+	font-weight normal
+	margin-bottom 0.6em
+.home-info-description
+	color #818181
+	font-size 1em
+.start-to-listening
+	display inline-block
+	border-top 1px solid #ccc
+	color #818181
+	padding 1em 0 1.5em 0
+	text-align center
+	position relative
+	width 90%
+	font-size 1.2em
+.home-footer
+	background-color #333333
+	min-height 20px
+	padding 0.8em 1.5em 0.3em
+.home-footer-logo
+	color #fff
+	font-size 1.25em
+.home-footer-menu
+	float right
+	& ul
+		list-style none
+		& li
+			display inline-block
+			margin-right 0.4em
+			& a
+				color #fff
+				font-size 0.8em
+				text-decoration underline
+.large,.medium
+	display none
+.small
+	display block
 .create-account .create-account-btn
 	color fuscia
 .home-footer
@@ -332,63 +393,170 @@ html, body
 		float none
 		display inline-block
 		vertical-align super
+	body#home
+		font-size 28px
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image
+		img
+			width 100%
+			height auto
+	.playing
+		&.medium
+			// width auto
+	.small
+			display none
+	.medium
+			display block
+
+	.slogan
+		font-weight normal
+		margin 1em auto
+		text-align center
+		width 14em
+	.banner-home
+		background-size auto
+		background-position center -45%
+		min-height 800px
+		& .isotipo
+			margin 8em auto auto
+			width 395px
+	.home-info-description
+		width 20em
+		display inline-block
+	#social-content
+		font-size 0.8em
+	.menu-login
+		& li
+			& span
+				font-size 1.5rem
+	.home-footer-menu
+		float none
+		display inline-block
+		vertical-align super
+	.home-footer-logo
+		margin-right 1em
 
 /** Media Query for  1000px	**/
 @media screen and (min-width:1000px)
 	body
-		background #F0F0F0
+		background gris_mas_claro
 	body#home
 		background #fff
 		font-size 22px
-	.large
-		display block
-		// Top Header
-	.logo-nav
-		margin 1em auto 0
-		overflow hidden
-		width 1000px
-	.medium
-		display none
-	.large
-		display block
+	.home-content
+		background #fff
+		font-size 22px
 	.button-menu
 		display none
-	.banner-home
-		min-height 600px
-		.isotipo
+	.playing
+		padding-top 1.3em
+		&.large
 			margin 0 auto
-			width 227px
+			width 62.5em
+			overflow hidden
+	.menu
+		display block
+		background lighter_gray
+		overflow hidden
+		border-top 1px solid light_gray
+		.item
 			float left
-		img
-			width 100%
-			height auto
-	.login-btn
-		color fuscia
-		float right
-		text-decoration none
-		&:hover
-			text-decoration underline
+			list-style none
+			a
+				color dark_gray
+				cursor pointer
+				display block
+				padding 1em
+				text-transform uppercase
+				border-top 5px solid transparent
+				transition .3s border-top
+				&:hover
+					border-top 5px solid light_gray
+	.music
+		width 32.5em
+		float left
+		.description
+			display none
+
+	.header
+		height auto
+		border none
+		.title
+			display none
+	.logo
+	.playlist
+		display block
+	.small
+			display none
+	.medium
+			display none
+	.large
+			display block
 	.slogan
 		font-size 2em
 		clear left
 		margin 1.5em auto
-	// Home Page Content
-	#social-content
-		font-size 0.8em
+	.banner-home
+		& .isotipo
+			margin auto
+			width 227px
+			margin-top 2em auto auto 1em
+			float left
+	.logo-nav
+		width 1000px
+		margin 1em auto 0
+		overflow hidden
+	.banner-home
+		min-height 600px
+	.home-content
+		width 1000px
+		margin 0 auto
+		padding 1em 0
+	.home-info-image
+		width 14em
+		vertical-align middle
+	.home-info-description
+		width auto
+	.home-info
+		padding 0
+		overflow hidden
+		text-align left
+		&:nth-child(2n)
+			& .home-info-image
+				display inline-block
+				margin-left 6em
+			& .home-info-content
+				margin-left 4em
+		&:nth-child(2n+1)
+			& .home-info-image
+				display inline-block
+				margin-right 4em
+			& .home-info-content
+				margin-left 4em
+				margin-right 3em
+	.home-info-content.large
+			font-size 1.2em
+			display inline-block
+			width 15em
+	.wrapper
+		width 1000px;
+		margin 0 auto
+	.home-footer-logo
+		font-size 1.5em
+	.login-btn
+		color #CC2F6F
+		float right
+		// text-decoration underline
 	.create-account
 		color #fff
 		display inline-block
 		font-size 1.2em
 		padding-top 1em
-	.home-content
-		width 1000px
-		margin 0 auto
-		padding 1em 0
-	.wrapper
-		width 1000px
-		margin 0 auto
-	.home-footer-logo
-		font-size 1.5em
+		& .create-account-btn
+			color #CC2F6F
+			text-decoration underline
 
 	// Content
 	.button-menu
