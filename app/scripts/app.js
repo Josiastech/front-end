@@ -8,8 +8,8 @@
  *
  * Main module of the application.
  */
-angular
-  .module('sfotipyApp', [
+angular.module('sfotipyApp', [
+    'ngRoute',
     'ngAnimate',
     'ngTouch'
-  ]);
+]);
